@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_ingredient_ingredients",
+  "info": {
+    "displayName": "ingredient",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
