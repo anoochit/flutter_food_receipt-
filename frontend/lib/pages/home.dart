@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:frontend/services/graphql_service.dart';
+import 'package:frontend/services/query.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 
 class HomePage extends StatelessWidget {
