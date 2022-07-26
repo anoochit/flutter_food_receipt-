@@ -20,8 +20,17 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
-          useMaterial3: true,
           primarySwatch: Colors.blue,
+          appBarTheme: AppBarTheme(
+            centerTitle: true,
+            elevation: 0.0,
+            titleTextStyle: Theme.of(context).textTheme.titleLarge,
+            backgroundColor: Colors.transparent,
+            iconTheme: IconTheme.of(context).copyWith(),
+          ),
+          textTheme: const TextTheme(
+            bodyText2: TextStyle(fontSize: 16.0, height: 1.5),
+          ),
         ),
         home: const HomePage(),
       ),

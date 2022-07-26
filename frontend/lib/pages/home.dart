@@ -3,6 +3,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:frontend/models/home_model.dart';
+import 'package:frontend/pages/recipes_detail.dart';
 import 'package:frontend/services/graphql_service.dart';
 import 'package:frontend/services/query.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
@@ -41,11 +42,11 @@ class HomePage extends StatelessWidget {
           if (result.data!.isNotEmpty) {
             final data = result.data;
 
-            final recipts = receiptsFromJson(json.encode(data));
-            final reciptsItems = recipts.receipts.data;
-
             // TODO : should parse this map
             //log('first item : ${recipts!["receipts"]["data"][0]["attributes"]["name"]}');
+
+            final recipts = receiptsFromJson(json.encode(data));
+            final reciptsItems = recipts.receipts.data;
 
             return ListView.builder(
               itemCount: reciptsItems.length,
@@ -71,12 +72,12 @@ class HomePage extends StatelessWidget {
                   title: Text('${title}'),
                   onTap: (() {
                     // show recipes
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //     builder: (context) => RecipesDetailPage(recipes: item),
-                    //   ),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => RecipesDetailPage(item: reciptsItems[index]),
+                      ),
+                    );
                   }),
                 );
               },
