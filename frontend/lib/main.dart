@@ -3,9 +3,8 @@ import 'package:frontend/services/graphql_service.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 import 'pages/home.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
   runApp(const MyApp());
 }
 

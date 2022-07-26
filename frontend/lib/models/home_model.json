@@ -1,0 +1,99 @@
+{
+  "__typename": "Query",
+  "receipts": {
+    "__typename": "ReceiptEntityResponseCollection",
+    "data": [
+      {
+        "__typename": "ReceiptEntity",
+        "id": "1",
+        "attributes": {
+          "__typename": "Receipt",
+          "name": "Chorizo & mozzarella gnocchi bake",
+          "description": "Upgrade cheesy tomato pasta with gnocchi, chorizo and mozzarella for a comforting bake that makes an excellent midweek meal",
+          "images": {
+            "__typename": "UploadFileRelationResponseCollection",
+            "data": [
+              {
+                "__typename": "UploadFileEntity",
+                "attributes": {
+                  "__typename": "UploadFile",
+                  "url": "/uploads/gnocchi_1d16725_6a1911eed3.webp"
+                }
+              }
+            ]
+          },
+          "ingredients": [
+            {
+              "__typename": "ComponentIngredientIngredient",
+              "id": "18",
+              "name": "1 tbsp olive oil"
+            },
+            {
+              "__typename": "ComponentIngredientIngredient",
+              "id": "19",
+              "name": "1 onion , finely chopped"
+            }
+          ]
+        }
+      },
+      {
+        "__typename": "ReceiptEntity",
+        "id": "2",
+        "attributes": {
+          "__typename": "Receipt",
+          "name": "Cucumber, mint & melon punch",
+          "description": "A fruity, minty, refreshing punch for a summer party. The mix of juicy honeydew, cantaloupe and watermelon chunks make this the ultimate cooler to beat the heat",
+          "images": {
+            "__typename": "UploadFileRelationResponseCollection",
+            "data": [
+              {
+                "__typename": "UploadFileEntity",
+                "attributes": {
+                  "__typename": "UploadFile",
+                  "url": "/uploads/cucumber_mint_melon_punch_bdfc7f1_8197decec5.jpg"
+                }
+              }
+            ]
+          },
+          "ingredients": [
+            {
+              "__typename": "ComponentIngredientIngredient",
+              "id": "20",
+              "name": "1 large cucumber , peeled and chopped into small chunks"
+            },
+            {
+              "__typename": "ComponentIngredientIngredient",
+              "id": "21",
+              "name": "small bunch mint , leaves picked"
+            },
+            {
+              "__typename": "ComponentIngredientIngredient",
+              "id": "22",
+              "name": "500ml vodka"
+            },
+            {
+              "__typename": "ComponentIngredientIngredient",
+              "id": "23",
+              "name": "juice 6 lime , plus wedges to serve"
+            },
+            {
+              "__typename": "ComponentIngredientIngredient",
+              "id": "24",
+              "name": "200g white caster sugar"
+            },
+            {
+              "__typename": "ComponentIngredientIngredient",
+              "id": "25",
+              "name": "1-2 small melons (we used 1/2 honeydew, 1/2 cantaloupe and 1/2 watermelon)"
+            },
+            {
+              "__typename": "ComponentIngredientIngredient",
+              "id": "26",
+              "name": "1l sparkling water , chilled"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

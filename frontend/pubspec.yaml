@@ -30,13 +30,17 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
-  graphql: ^5.1.1
-  graphql_flutter: ^5.1.0
+  graphql: ^5.1.2-beta.1
+  graphql_flutter: ^5.1.1-beta.4
+  # json_annotation: ^4.6.0
 
 dev_dependencies:
+  # build_runner: ^2.2.0
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
+  # graphql_codegen: ^0.10.2
+  # json_serializable: ^6.3.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

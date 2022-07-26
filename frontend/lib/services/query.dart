@@ -1,4 +1,4 @@
-String readRecipts = """
+String readAllRecipts = """
 query {
   receipts {
     data {

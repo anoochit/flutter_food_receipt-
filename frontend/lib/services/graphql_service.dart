@@ -8,6 +8,15 @@ class GraphQLService {
     'http://10.0.2.2:1337/graphql?populate=*',
   );
 
+  // static GraphQLClient client() {
+  //   return GraphQLClient(
+  //     link: httpLink,
+  //     cache: GraphQLCache(
+  //       store: InMemoryStore(),
+  //     ),
+  //   );
+  // }
+
   static ValueNotifier<GraphQLClient> clientToQuery() {
     return ValueNotifier(
       GraphQLClient(
